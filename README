@@ -1,0 +1,36 @@
+-----------------------------------------
+Plagiarism detection command line program
+-----------------------------------------
+
+I. Usage and Arguments
+Example usage: 
+	python plag_detect.py -syn synonyms_file -s source_file -r reference_file -n n_grams
+
+-syn | --synonyms
+	(required) specifies the file name for a list of synonyms
+
+-s | --source
+	(required) specifies the file name for the source file to be detected
+
+-r | --reference
+	(required) specifies the file name for the reference file
+
+-n | --n_gram
+	(optional) specifies the size of tuple. Default value is 3.
+
+-h | --help
+	(optional) print usage instructions
+
+II. File list
+------------
+plag_detect.py					main program
+plagiarism_detector.py 			plagiarism detection implementation
+utils.py       					some utility functions
+README						this file :)
+
+III. System requirement
+Python version >= 2.7
+
+IV. Issues
+a. Tokenize the input file.
+b. Assume files could fit into memory.
